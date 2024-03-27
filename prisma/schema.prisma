@@ -15,6 +15,6 @@ datasource db {
 
 model task {
   id Int @id @default(autoincrement())
-  name String
+  name String @unique
   status String
 }
